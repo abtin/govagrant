@@ -86,4 +86,4 @@ $ vagrant box remove generic/centos8
 ```
 
 ## Demo
-A screen capture of the execution is also available ![here](./demo.mp4).
+A screen capture of the execution is also available at ./demo.mp4
