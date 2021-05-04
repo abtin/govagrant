@@ -1,0 +1,7 @@
+Vagrant.configure("2") do |config|
+  config.vm.define "centos" do |centos|
+    config.vm.box = "generic/centos8"
+    config.vm.box_version = "3.2.18"
+    config.vm.synced_folder "/Users/abtin/1work/projs/govagrant", "/home/vagrant/govagrant"
+  end
+end
