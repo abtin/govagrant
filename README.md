@@ -14,7 +14,7 @@ Pre-requisites to run this POC:
 - Golang. I have version 1.16.3
 
 ## 1) Prepare the VMs
-### Install Golang on the Windows VM and halt it
+### Install Golang on the Windows VM and suspend it
 ```bash
 $ export VAGRANT_VAGRANTFILE=$PWD/Vagrantfile.windows
 $ vagrant up windows
@@ -25,7 +25,7 @@ $ vagrant powershell windows -c '$env:Path += ";C:\Program Files\Go\bin"'
 $ vagrant suspend
 ```
 
-### Install Golang on the CentOS VM and halt it
+### Install Golang on the CentOS VM and suspend it
 ```bash
 $ export VAGRANT_VAGRANTFILE=$PWD/Vagrantfile.centos
 $ vagrant up 
@@ -35,7 +35,7 @@ $ vagrant suspend
 ```
 
 
-### Install Golang on the Ubuntu VM and halt it
+### Install Golang on the Ubuntu VM and suspend it
 ```bash
 $ export VAGRANT_VAGRANTFILE=$PWD/Vagrantfile.ubuntu
 $ vagrant up ubuntu
