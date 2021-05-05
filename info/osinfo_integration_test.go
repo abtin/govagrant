@@ -10,7 +10,7 @@ import (
 
 func TestNewOsInfo_windows10(t *testing.T) {
 	if runtime.GOOS != "windows" {
-		t.Logf("Skipping TestNewOsInfo_windows10 on a non windows host")
+		t.Skip("Skipping TestNewOsInfo_windows10 on a non windows host")
 		return
 	}
 
@@ -32,7 +32,7 @@ func TestNewOsInfo_windows10(t *testing.T) {
 
 func TestNewOsInfo_linux(t *testing.T) {
 	if runtime.GOOS != "linux" {
-		t.Logf("Skipping TestNewOsInfo_linux_ubuntu on a non linux host")
+		t.Skip("Skipping TestNewOsInfo_linux_ubuntu on a non linux host")
 		return
 	}
 	want := OSInfo{
